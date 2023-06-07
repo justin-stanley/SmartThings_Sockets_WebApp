@@ -43,7 +43,7 @@ SmartThings SmartApps are typically run within the cloud on a service like Lambd
 
 2. You need an SSL certificate for the domain name. This is required by the ST Platform. 
 
-3. You need a Dynamic DNS server to keep your domain name pointing at your network. 
+3. You need a Dynamic DNS service to keep your domain name pointing at your network. 
 
 4. You need to configure port forwarding on your router to direct outside traffic to your local server. 
 
