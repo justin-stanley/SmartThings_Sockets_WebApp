@@ -1,0 +1,216 @@
+html {
+   overflow: hidden;
+   height: 100%;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 100;
+   margin:  0;
+   padding:  0;
+   color: #fff;
+   background: #2b2c2e;
+   overflow: hidden;
+   height: 100%;
+}
+
+.loading {
+   padding: 20% 0;
+   font-size: 33px;
+   text-align: center;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.wrapper {
+   display: none;
+   height: 100%;
+}
+
+.locationName {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   display: block;
+   padding: 20px 15px;
+   margin: 0;
+   background: #000;
+   font-size: 15px;
+   letter-spacing: 1px;
+}
+
+.checkmark {
+   display: inline-block;
+   width: 22px;
+   height: 22px;
+   -ms-transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   transform: rotate(45deg);
+   background: #308a12;
+   border-radius: 100%;
+   vertical-align: middle;
+   margin-top: -4px;
+   margin-right: 5px;
+}
+
+.checkmark_stem {
+  position: absolute;
+  width: 3px;
+  height: 9px;
+  background-color: #ccc;
+  left: 11px;
+  top: 6px;
+}
+
+.checkmark_kick {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #ccc;
+  left: 8px;
+  top: 12px;
+}
+
+.checkmark.error {
+   background: #6b0000;
+}
+
+.checkmark.error .checkmark_kick {
+   display: none;
+}
+
+.checkmark.error .checkmark_stem {
+   display: none;
+}
+
+.dateTime {
+   display: flex;
+   padding: 20px 0;
+}
+
+.dateTime .date {
+   flex-grow: 1;
+   margin-left: 20px;
+}
+
+.dateTime .date .d {
+      font-size: 25px;
+}
+.dateTime .date .dow {
+      font-size: 55px;
+      font-weight: 600;
+}
+
+.dateTime .time {
+   font-size: 25px;
+   background: #222;
+   padding: 15px 45px;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+   height: 55px;
+   margin-top: 5px;
+}
+
+.dateTime .time .t {
+   font-size: 40px;
+   font-weight: 400;
+}
+
+.dateTime .time .dp {
+   font-size: 24px;
+   margin-left: 5px;
+}
+
+.eventFeed {
+   font-size: 25px;
+   margin: 20px 0 0;
+   max-width: 850px;
+   height: 100%;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   border-top: 1px solid #4d4e52;
+}
+
+.eventFeed .item {
+   padding: 25px 20px;
+   border-top: 1px solid #4d4e52;
+}
+
+.eventFeed .item:first-child {
+   border-top: 0;
+}
+
+.eventFeed .item .device {
+   font-weight: 400;
+}
+
+.eventFeed .item .value {
+   font-weight: 600;
+}
+
+.eventFeed .item .time {
+   margin-left: 7px;
+   font-size: 20px;
+}
+
+@media only screen and (max-width: 700px){
+   body {
+      background: #1a1b1c;
+   }
+
+   .dateTime {
+      padding-bottom: 0;
+   }
+
+   .dateTime .time {
+      display: none;
+   }
+   .dateTime .date .dow {
+      font-size: 30px;
+   }
+
+   .dateTime .date .d {
+      font-size: 17px;
+   }
+
+   .eventFeed {
+      background: #2b2c2e;
+   }
+
+   .eventFeed .item {
+      padding: 15px 20px;
+   }
+
+   .eventFeed .item .device {
+      font-size: 18px;
+   }
+
+   .eventFeed .item .time {
+      margin-left: 0;
+      font-size: 16px;
+      display: block;
+      margin-top: 3px;
+   }
+
+   .locationName {
+      font-size: 12px;
+      padding: 10px 15px;
+      font-weight: 300;
+   }
+
+   .checkmark {
+      height: 19px;
+      width: 19px;
+      margin-top: -3px;
+   }
+
+   .checkmark_stem {
+      left: 9px;
+      top: 4px;
+   }
+
+   .checkmark_kick {
+      left: 6px;
+      top: 10px;
+   }
+}

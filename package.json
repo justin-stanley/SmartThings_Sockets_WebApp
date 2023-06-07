@@ -1,0 +1,17 @@
+{
+  "name": "smartthings_sockets_webapp",
+  "version": "1.0.0",
+  "description": "Webhook for SmartThings SmartApp with socket server for broadcasting device events plus companion static webapp and express server for running static app.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "concurrently --kill-others \"node services/st-app.js\"  \"node services/web-app.js\""
+  },
+  "author": "Justin Stanley",
+  "license": "ISC",
+  "dependencies": {
+    "@smartthings/smartapp": "^4.2.0",
+    "concurrently": "^8.1.0",
+    "express": "^4.18.2",
+    "ws": "^8.13.0"
+  }
+}

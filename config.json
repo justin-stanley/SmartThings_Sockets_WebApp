@@ -1,0 +1,26 @@
+{
+	"smartApp" : {
+		"appId" : "XXXXX",
+		"clientId" : "XXXXX",
+		"clientSecret" : "XXXXX",
+		"appPort" : "8889",
+		"socketPort" : "9000",
+		"ssl" : {
+			"keyFile" : "path/to/my.key",
+			"certFile" : "path/to/cert.pem",
+			"caFile" : "path/to/root-cert.ca-bundle"
+		}
+	},
+	"webApp" : {
+		"port" : "80",
+		"locationName" : "My House",
+		"timeFormat" : "ago",
+		"eventLimit" : 15,
+		"deviceLabels" : {
+			"my-device-id" : {
+				"label" :  "My Custom Device Label",
+				"verb" : false
+			}
+		}
+	}
+}
